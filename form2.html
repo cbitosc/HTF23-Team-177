@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental health Form</title>
+    <style>
+        body {
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-portfolio-pink-memphis-playful-image_593414.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .title-bar {
+            background-color: #ff6600;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #cc5500;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-bar">Form 2</div>
+    <h1>Mental health Form</h1>
+    <form action="volunteer_submit.php" method="post">
+        <label for="name">How are you feeling about you acedemic-self currently?:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">On the scale 1-10 would you rate your overall mental health being? 1- worst, 10-best:</label>
+        <input type="email" id="email" name "email" required><br><br>
+
+        <label for="phone">Are you often anxious or worried about various aspects of your life, including work, family, or personal issues?:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="interests">Do you feel persistently sad or down, or have you experienced a loss of interest or pleasure in activities you used to enjoy?</label>
+        <textarea id="interests" name="interests" rows="4" cols="50"></textarea><br><br>
+
+        <label for="availability">Do you have difficulty concentrating or making decisions?</label>
+        <input type="text" id="availability" name="availability" required><br><br>
+
+        <label for="availability">Have you experienced physical symptoms like headaches, muscle tension, or digestive issues that may be related to stress or anxiety?</label>
+        <input type="text" id="availability" name="availability" required><br><br>
+
+        <input type="submit" value="SUBMIT RESPONSE">
+    </form>
+</body>
+</html>
+

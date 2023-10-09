@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Dashboard</title>
+	<style>
+		body {
+			background-image: url('background.jpg'); /* Add your background image URL here */
+			background-size: cover;
+			background-repeat: no-repeat;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			position: relative;
+		}
+
+		.header .menu-toggle {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
+		}
+
+		.menu {
+			margin-top: 20px;
+			display: none; /* Initially hide the menu */
+			background-color: rgba(255, 255, 255, 0.9);
+			padding: 10px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+
+		.menu a {
+			text-decoration: none;
+			color: #333;
+			margin: 10px;
+			display: block;
+		}
+
+		.menu a:hover {
+			background-color: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>User Dashboard</h1>
+			<p>Welcome, [username]!</p>
+			<div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Add a toggle button -->
+		</div>
+		<div class="menu" id="menu"> <!-- Give the menu an ID for JavaScript -->
+			<a href="student-activity.html">Student Activity</a>
+			<a href="mentoring-diary.html">Mentoring Diary</a>
+			<a href="#">Your Profile</a>
+			<a href="#">Settings</a>
+			<a href="#">Log Out</a>
+		</div>
+	</div>
+
+	<script>
+		function toggleMenu() {
+			var menu = document.getElementById("menu");
+			if (menu.style.display === "block") {
+				menu.style.display = "none";
+			} else {
+				menu.style.display = "block";
+			}
+		}
+	</script>
+</body>
+</html>

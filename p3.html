@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Description</title>
+  <style>
+    body {
+      background-image: url("https://cdn.inc42.com/wp-content/uploads/2021/04/Untitled-design-23-1.jpg");
+'); /* Add your background image URL here */
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    form {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    label {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    input[type="file"], input[type="text"], select {
+      display: block;
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 15px;
+      font-size: 20px;
+    }
+    button {
+      display: block;
+      margin-top: 35px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label for="picture">CERTIFICATE DESCRIPTION:</label>
+    <input type="file" id="picture" name="picture">
+    <label for="animal">YEAR DATED</label>
+    <input type="int" id="animal" name="animal">
+    <label for="gender">SELECT CATAGORY</label>
+    <select id="size" name="size">
+      <option value="female">SPORTS</option>
+      <option value="male">NSS</option>
+      <option value="male">ORGANISING</option>
+      <option value="male">PARTICIAPATION</option>
+    </select>
+    <label for="breed">ORGANISATION name:</label>
+    <input type="text" id="breed" name="breed">
+    <label for="age">NAME AS MENTIONED IN FILE:</label>
+    <input type="text" id="age" name="age">
+    <label for="health">Year & sem:</label>
+    <input type="text" id="health" name="health">
+    <label for="other">Other Description:</label>
+    <input type="text" id="other" name="other">
+    <button onclick="showAlert()">UPLOAD</button>
+    <script>
+        function showAlert() {
+          alert('Upload sucessful.Wait formentor approval to claim points !');
+        }
+      </script>
+  </form>
+</body>
+</html>
